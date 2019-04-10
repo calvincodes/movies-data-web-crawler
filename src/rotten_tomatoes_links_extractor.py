@@ -1,3 +1,5 @@
+__author__ = "Srujana, Anshu, Arpit"
+
 from bs4 import BeautifulSoup
 import urllib.request
 
@@ -23,7 +25,7 @@ my_set = set(rotten_tomatoes_movie_list)
 # print()
 for i in my_set:
     # print(i)
-    with open("rotten_tomatoes_movie_list.txt", "a") as myFile:
+    with open("../resources/rotten_tomatoes_movie_list.txt", "a") as myFile:
         myFile.write("https://www.rottentomatoes.com"+str(i))
         myFile.write("\n")
 # print("Done!")
