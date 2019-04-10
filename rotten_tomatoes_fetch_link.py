@@ -20,6 +20,6 @@ for num in range(1900, 2020):
 
 
 my_set = set(rotten_tomatoes_movie_list)
-print(rotten_tomatoes_movie_list)
-print()
+# print(rotten_tomatoes_movie_list)
+# print()
 print(len(my_set))
