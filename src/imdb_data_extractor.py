@@ -9,8 +9,8 @@ columns = ["Name", "Release Year", "Rating", "Runtime", "Release Date",
            "Director Name", "Certificate", "genre"]
 result = [columns]
 badLink = []
-path = "../resources/imdb_movie_list.txt"
-# path = "../resources/test.txt"
+# path = "../resources/imdb_movie_list.txt"
+path = "../resources/test.txt"
 with open(path, 'r') as infile:
     for link in infile:
         try:
@@ -20,6 +20,7 @@ with open(path, 'r') as infile:
                                      'charset'))
             data = json.loads(
                 soup.find('script', type='application/ld+json').text)
+            print(data)
 
             name = None
             rating = None

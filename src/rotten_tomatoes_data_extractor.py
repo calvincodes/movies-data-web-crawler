@@ -5,7 +5,7 @@ import csv
 from bs4 import BeautifulSoup
 import time
 
-columns = ["Name", "Release Year", "Rating", "Runtime", "Release Date", "Director Name", "Certificate", "genre"]
+columns = ["Name", "Release Year", "Rating", "Runtime", "Release Date", "Director Name", "Certificate", "genre","studio"]
 result = [columns]
 badLink = []
 # path = "../resources/test.txt"
@@ -26,6 +26,7 @@ with open(path, 'r') as infile:
             certificate=None
             genre=None
             directorName=None
+            studio=None
 
             if(soup.find('script', type='application/ld+json') is not None):
                 data = json.loads(
@@ -50,8 +51,11 @@ with open(path, 'r') as infile:
                 if (len(metaData) >= 7):
                     runtime = metaData[6].text.strip()
 
+                if(len(metaData) >= 8):
+                    studio = metaData[7].text.strip()
 
-            row = [name, releaseYear, rating, runtime, releaseDate, directorName, certificate, genre]
+
+            row = [name, releaseYear, rating, runtime, releaseDate, directorName, certificate, genre, studio]
             result.append(row)
             time.sleep(0.05)
         except:
