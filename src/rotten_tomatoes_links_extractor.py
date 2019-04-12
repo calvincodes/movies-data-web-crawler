@@ -20,6 +20,7 @@ for num in range(1900, 2020):
     rotten_tomatoes_movie_list.extend(temp)
 
 
+
 my_set = set(rotten_tomatoes_movie_list)
 
 myFile = open("../resources/rotten_tomatoes_movie_list.txt", "w")
