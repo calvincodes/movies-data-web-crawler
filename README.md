@@ -22,7 +22,6 @@ Provided below is the count of movies extracted from each site:
 |  Director's Name | Name(s) of director(s) who directed the movie   |
 |  Certificate  |  Rating of the movie (R: Restricted, G: General Audiences, PG: Parental Guidance Suggested, etc.)  |
 |  Genre |  The category of the movie (Drama, Comedy, Action, Horror, Romance, etc.) |
-|  Studio | Production studio of the movie |
 
 ## Project Website
 [https://sites.google.com/view/data-science-project/home](https://sites.google.com/view/data-science-project/home)
