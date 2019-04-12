@@ -1,30 +1,28 @@
 # [Movies Data Web Crawler](https://sites.google.com/view/data-science-project/home) 
 
-## Setup & Requirements
-
-```shell
-pip3 install -r requirements.txt
-```
-
-## Running the project
-
 ## Introduction
+This project crawls data from IMDb and Rotten Tomatoes, extracts structured data from them and stores it in two tables. The schema of the tables is manually defined as per the attributes available on both the websites.
+Provided below is the count of movies extracted from each site:
+
+1. IMDb: 3476
+2. Rotten Tomatoes: 3061
 
 ## Websites Used
 * [IMDB](https://www.imdb.com/)
 * [Rotten Tomatoes](https://www.rottentomatoes.com/)
 
-## Stages
-* Stage 1: Information extraction from natural text.
-    * [Report](https://drive.google.com/a/wisc.edu/file/d/1iy1Qqh3WfpRNqjpXA-CgzzLsjUqg5ktS/view?usp=sharing)
-    * [Source Code](https://github.com/calvincodes/location-extractor-from-text-documents/tree/master/stage1)
-    * [Website Page](https://sites.google.com/view/data-science-project/home/stage-1)
-
-* Stage 2: Crawling and extracting structured data from Web pages. (To be done)
-
-* Stage 3: Entity matching. (To be done)
-
-* Stage 4: Integrating and performing analysis. (To be done)
+## Attributes extracted
+| Attributes  |  Description |
+|---|---|
+|  Name | Name of the movie  |
+|  Release Year |  The year when the movie was released (Ex: 2005)  |
+|  Rating |  The rating of the movie as submitted by users |
+|  Runtime |  The duration of the movie |
+|  Release Date | Date of release of the movie |
+|  Director's Name | Name(s) of director(s) who directed the movie   |
+|  Certificate  |  Rating of the movie (like, R: Restricted, G: General Audiences, PG: Parental Guidance Suggested)  |
+|  Genre |  The category of the movie (like: Drama, Comedy, Action, Horror, Romance etc) |
+|  Studio | Production studio of the movie |
 
 ## Project Website
 [https://sites.google.com/view/data-science-project/home](https://sites.google.com/view/data-science-project/home)
