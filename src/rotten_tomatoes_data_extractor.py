@@ -6,7 +6,6 @@ from bs4 import BeautifulSoup
 import time
 
 columns = ["Name", "Release Year", "Rating", "Runtime", "Release Date", "Director Name", "Certificate", "genre"]
-webHost = "https://www.rottentomatoes.com/"
 result = [columns]
 badLink = []
 # path = "../resources/test.txt"
@@ -38,10 +37,10 @@ with open(path, 'r') as infile:
             metaData = soup.findAll('div', class_="meta-value")
             if(metaData is not None):
                 if(len(metaData) >=2):
-                    genre = metaData[1].text
+                    genre = metaData[1].text.replace("\n", "")
 
                 if (len(metaData) >= 3):
-                    directorName = metaData[2].text
+                    directorName = metaData[2].text.replace("\n", "")
 
                 if (len(metaData) >= 5):
                     releaseDate = (metaData[4].text).split('\n')[1]
