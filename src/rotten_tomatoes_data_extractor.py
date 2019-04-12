@@ -62,7 +62,7 @@ with open(path, 'r') as infile:
             print(link + "\n")
             badLink.append(link)
 
-filename = "RottenTomatoesData.csv"
+filename = "../resources/output/RottenTomatoesData.csv"
 with open(filename,'w',newline='') as f:
         w = csv.writer(f)
         for List in result:

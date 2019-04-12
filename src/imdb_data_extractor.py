@@ -9,8 +9,8 @@ columns = ["Name", "Release Year", "Rating", "Runtime", "Release Date",
            "Director Name", "Certificate", "genre"]
 result = [columns]
 badLink = []
-# path = "../resources/imdb_movie_list.txt"
-path = "../resources/test.txt"
+path = "../resources/imdb_movie_list.txt"
+# path = "../resources/test.txt"
 with open(path, 'r') as infile:
     for link in infile:
         try:
@@ -52,8 +52,8 @@ with open(path, 'r') as infile:
         except:
             badLink.append(link)
 
-filename = "IMDBData.csv"
-with open(filename, 'w', newline='') as f:
+ouputFilePath = "../resources/output/IMDBData.csv"
+with open(ouputFilePath, 'w', newline='') as f:
     w = csv.writer(f)
     for List in result:
         w.writerow(List)
