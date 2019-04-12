@@ -1,9 +1,9 @@
-import json
-import urllib.request
-import re
 import csv
-from bs4 import BeautifulSoup
+import json
 import time
+import urllib.request
+
+from bs4 import BeautifulSoup
 
 columns = ["Name", "Release Year", "Rating", "Runtime", "Release Date",
            "Director Name", "Certificate", "genre"]
@@ -56,3 +56,6 @@ with open(filename, 'w', newline='') as f:
     w = csv.writer(f)
     for List in result:
         w.writerow(List)
+
+print("Total No. of Failed link" +  str(len(badLink)))
+print(badLink)
