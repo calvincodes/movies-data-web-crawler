@@ -21,13 +21,10 @@ for num in range(1900, 2020):
 
 
 my_set = set(rotten_tomatoes_movie_list)
-# print(rotten_tomatoes_movie_list)
-# print()
+
+myFile = open("../resources/rotten_tomatoes_movie_list.txt", "w")
 for i in my_set:
-    # print(i)
-    with open("../resources/rotten_tomatoes_movie_list.txt", "a") as myFile:
-        myFile.write("https://www.rottentomatoes.com"+str(i))
-        myFile.write("\n")
-# print("Done!")
+    myFile.write("https://www.rottentomatoes.com"+str(i))
+    myFile.write("\n")
 
 print("No. of movies: ", len(my_set))

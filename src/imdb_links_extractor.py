@@ -40,8 +40,7 @@ imdb_movie_set.remove('')
 print("Crawling finished - Total movie links extracted: ")
 print(len(imdb_movie_set))
 
+imdb_movie_list_file = open("../resources/imdb_movie_list.txt", "w")
 for movie_link in imdb_movie_set:
-    with open("../resources/imdb_movie_list.txt", "a") as imdb_movie_list_file:
-        imdb_movie_list_file.write("https://www.imdb.com/title/" + movie_link)
-        imdb_movie_list_file.write("\n")
-
+    imdb_movie_list_file.write("https://www.imdb.com/title/" + movie_link)
+    imdb_movie_list_file.write("\n")
