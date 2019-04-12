@@ -21,15 +21,11 @@ for num in range(1900, 2020):
 
 
 
-# print(rotten_tomatoes_movie_list)
-# print()
-my_set = set()
-for i in rotten_tomatoes_movie_list:
-    if i not in my_set:
-        my_set.add(i)
-with open("../resources/rotten_tomatoes_movie_list.txt", "w+") as myFile:
-    for i in my_set:
-        myFile.write("https://www.rottentomatoes.com"+str(i) + "\n")
-# print("Done!")
+my_set = set(rotten_tomatoes_movie_list)
+
+myFile = open("../resources/rotten_tomatoes_movie_list.txt", "w")
+for i in my_set:
+    myFile.write("https://www.rottentomatoes.com"+str(i))
+    myFile.write("\n")
 
 print("No. of movies: ", len(my_set))
