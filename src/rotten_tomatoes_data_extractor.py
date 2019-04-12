@@ -45,7 +45,7 @@ with open(path, 'r') as infile:
 
                 if (len(metaData) >= 5):
                     releaseDate = (metaData[4].text).split('\n')[1]
-                    ((metaData[4].text).split('\n')[1]).split(',')[-1].strip()
+                    releaseYear =((metaData[4].text).split('\n')[1]).split(',')[-1].strip()
 
 
                 if (len(metaData) >= 7):
