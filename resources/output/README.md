@@ -12,7 +12,6 @@
 |  Director's Name | Name(s) of director(s) who directed the movie   |
 |  Certificate  |  Rating of the movie (R: Restricted, G: General Audiences, PG: Parental Guidance Suggested, etc.)  |
 |  Genre |  The category of the movie (Drama, Comedy, Action, Horror, Romance, etc.) |
-|  Studio | Production studio of the movie |
 
 ### Rotten Tomatoes
 
@@ -28,7 +27,6 @@ Attribute details:
 6. Director’s Name (String): Director of the movie
 7. Certificate (String): Certification like G, PG, etc.
 8. Genre (Text): Genre of the movie like Drama, Action, etc.
-9. Studio (String): Movie's production studio
 
 ### IMDb 
 
