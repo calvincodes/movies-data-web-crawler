@@ -5,13 +5,13 @@
 | Attributes  |  Description |
 |---|---|
 |  Name | Name of the movie  |
-|  Release Year |  The year when the movie was released (Ex: 2005)  |
+|  Release Year |  The year when the movie was released (2005)  |
 |  Rating |  The rating of the movie as submitted by users |
 |  Runtime |  The duration of the movie |
 |  Release Date | Date of release of the movie |
 |  Director's Name | Name(s) of director(s) who directed the movie   |
-|  Certificate  |  Rating of the movie (like, R: Restricted, G: General Audiences, PG: Parental Guidance Suggested)  |
-|  Genre |  The category of the movie (like: Drama, Comedy, Action, Horror, Romance etc) |
+|  Certificate  |  Rating of the movie (R: Restricted, G: General Audiences, PG: Parental Guidance Suggested, etc.)  |
+|  Genre |  The category of the movie (Drama, Comedy, Action, Horror, Romance, etc.) |
 |  Studio | Production studio of the movie |
 
 ### Rotten Tomatoes
